@@ -1,48 +1,7 @@
+import { useGetLeads } from "../api/useBlogs";
+
 export const useLeadsTable = () => {
-  const data = [
-    {
-      leadNumber: 1212,
-      leadOrigin: "api",
-      leadSource: "asd",
-      leadStage: "1st",
-      engagementScore: "100",
-    },
-    {
-      leadNumber: 324,
-      leadOrigin: "test",
-      leadSource: "dasd",
-      leadStage: "sec",
-      engagementScore: "200",
-    },
-    {
-      leadNumber: 143,
-      leadOrigin: "hey",
-      leadSource: "rwe",
-      leadStage: "third",
-      engagementScore: "300",
-    },
-    {
-      leadNumber: 5234,
-      leadOrigin: "bro",
-      leadSource: "asdasg",
-      leadStage: "4th",
-      engagementScore: "400",
-    },
-    {
-      leadNumber: 4264,
-      leadOrigin: "sis",
-      leadSource: "arewht",
-      leadStage: "5th",
-      engagementScore: "500",
-    },
-    {
-      leadNumber: 978,
-      leadOrigin: "bruh",
-      leadSource: "dsd",
-      leadStage: "6th",
-      engagementScore: "600",
-    },
-  ];
+  const { data } = useGetLeads();
 
   const columns = [
     {
@@ -76,7 +35,7 @@ export const useLeadsTable = () => {
       title: "Last Activity Date",
       key: "lastActivityDate",
       dataIndex: "lastActivityDate",
-      sorter: (a, b) => a.lastActivityDate - b.lastActivityDate,
+      // sorter: (a, b) => a.lastActivityDate - b.lastActivityDate,
     },
   ];
 

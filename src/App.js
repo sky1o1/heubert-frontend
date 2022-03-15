@@ -1,13 +1,14 @@
 import "./App.css";
-// import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import AppRoute from "./router/AppRoute";
 
 function App() {
+  const queryClient = new QueryClient();
   return (
     <div className="App">
-      {/* <QueryClientProvider client={QueryClient}> */}
-      <AppRoute />
-      {/* </QueryClientProvider> */}
+      <QueryClientProvider client={queryClient}>
+        <AppRoute />
+      </QueryClientProvider>
     </div>
   );
 }

@@ -72,6 +72,7 @@ const StyledTable = styled(Table)`
 
 function Leads() {
   const { data, columns } = useLeadsTable();
+
   return (
     <div className="container">
       <Typography.Title>Leads Table</Typography.Title>
@@ -80,7 +81,7 @@ function Leads() {
           display: "flex",
           justifyContent: "center",
         }}>
-        <StyledTable dataSource={data} columns={columns} />
+        <StyledTable dataSource={data?.data} columns={columns} />
       </div>
     </div>
   );
