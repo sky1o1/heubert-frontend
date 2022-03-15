@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color:#ADD8E6;
+}
+
+#navbar {
+  background: white;
+  overflow-y: hidden;
+}
+
+
+.app-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 280px 1fr;
+      grid-template-columns: 280px 1fr;
+}
+
+.app-wrapper #sidebar {
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #f0f0f0;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
