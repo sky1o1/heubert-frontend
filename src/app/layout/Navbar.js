@@ -47,7 +47,7 @@ const StyledMenu = styled(Menu)`
     height: 35px !important;
   }
   .ant-menu-sub .ant-menu-inline {
-    background: rgba(0, 0, 0, 0.15);
+    background: #fff;
   }
   .ant-menu-sub .ant-menu-item-selected {
     width: 90%;
@@ -68,10 +68,15 @@ function Navbar() {
           width: 256,
           height: 400,
         }}
-        defaultSelectedKeys={["leads"]}
+        defaultSelectedKeys={["home"]}
         mode="inline"
-        theme="dark"
         inlineCollapsed={false}>
+        <Menu.Item
+          onClick={() => history.push("/")}
+          style={{ cursor: "pointer", padding: 15 }}
+          key="home">
+          Home
+        </Menu.Item>
         <Menu.Item
           onClick={() => history.push("/leads")}
           style={{ cursor: "pointer", padding: 15 }}
