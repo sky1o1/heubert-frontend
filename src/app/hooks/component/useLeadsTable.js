@@ -23,6 +23,18 @@ export const useLeadsTable = () => {
           text: "Landing Page Submission",
           value: "Landing Page Submission",
         },
+        {
+          text: "Lead Add Form",
+          value: "Lead Add Form",
+        },
+        {
+          text: "Quick Add Form",
+          value: "Quick Add Form",
+        },
+        {
+          text: "Lead Import",
+          value: "Lead Import",
+        },
       ],
       onFilter: (value, record) => record.leadOrigin.indexOf(value) === 0,
     },
